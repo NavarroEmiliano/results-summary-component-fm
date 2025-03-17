@@ -1,0 +1,75 @@
+@use '../utils' as u;
+
+.hero {
+    text-align: center;
+    position: relative;
+    overflow-x: hidden;
+
+    &__pattern-1 {
+        position: absolute;
+        inline-size: u.rem(270);
+        block-size: auto;
+
+
+        @include u.breakpoint(large) {
+            inline-size: u.rem(360);
+            inset-inline-start: u.rem(-120);
+        }
+
+    }
+
+    &__pattern-2 {
+        position: absolute;
+        block-size: auto;
+        inline-size: u.rem(112);
+
+        @include u.breakpoint(large) {
+            inline-size: u.rem(230);
+            inset-inline-end: u.rem(-69);
+            inset-block-start: u.rem(200);
+        }
+    }
+
+    &__wrapper {
+        background-color: u.$color-purple-900;
+    }
+
+    &__title {
+        color: u.$color-white;
+        margin-block-end: u.rem(40);
+        max-inline-size: 12ch;
+        margin-inline: auto;
+    }
+
+    &__button {
+        margin-block-end: clamp(u.rem(64), 3.471830985915493rem + 2.253521126760563vw, u.rem(88));
+    }
+
+    &__img-wrapper {
+        width: 100%;
+        position: relative;
+        background-color: u.$color-purple-100;
+        z-index: -2;
+        overflow-x: hidden;
+
+        &::after {
+            content: '';
+            position: absolute;
+            height: 600vw;
+            width: 600vw;
+            left: 50%;
+            bottom: 40%;
+            transform: translateX(-50%);
+            background-color: u.$color-purple-900;
+            border-radius: 50%;
+            z-index: -1;
+        }
+    }
+
+    &__img {
+
+        position: relative;
+        z-index: 1;
+        max-inline-size: u.rem(767);
+    }
+}

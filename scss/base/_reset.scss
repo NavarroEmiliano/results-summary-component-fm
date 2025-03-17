@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,
+picture {
+    inline-size: 100%;
+    block-size: auto;
+}
+
+a{
+    text-decoration: none;
+    display: flex;
+}
+
+button {
+    border: none;
+}

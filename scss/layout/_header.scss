@@ -1,0 +1,23 @@
+@use '../utils' as u;
+.header {
+    background-color: u.$color-purple-900;
+    padding-block-start: clamp(u.rem(32), 1.471830985915493rem + 2.253521126760563vw, u.rem(56));
+    padding-block-end: u.rem(56);
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        block-size: u.rem(35);
+    }
+
+    &__link {
+        color: u.$color-white;
+        border-block-end: 3px solid u.$color-green;
+        display: flex;
+        transition: all 150ms ease-in-out;
+        &:hover {
+            color:u.$color-green;
+        }
+    }
+}
