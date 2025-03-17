@@ -31,9 +31,11 @@ button {
 .results__score-number {
     font-size: clamp(u.rem(56), 2.989795918367347rem + 2.1768707482993195vw, u.rem(72));
     font-weight: 800;
+    line-height: 1;
 }
 
 .results__score-max,
 strong {
     font-weight: 700;
+    line-height: 1.3125;
 }

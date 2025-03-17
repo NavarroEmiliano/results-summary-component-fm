@@ -1,0 +1,6 @@
+@use '../utils/' as u;
+
+.results-component {
+    display: flex;
+    flex-direction: column;
+}
