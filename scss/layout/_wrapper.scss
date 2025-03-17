@@ -1,6 +1,0 @@
-@use '../utils' as u;
-
-.wrapper {
-    inline-size: min(100% - u.rem(20), u.rem(1110));
-    margin-inline: auto;
-}
