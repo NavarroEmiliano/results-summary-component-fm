@@ -1,0 +1,56 @@
+@use '../utils/' as u;
+
+.summary {
+    padding-block-start: clamp(u.rem(24), 1.05rem + 1.90vw, u.rem(38));
+    padding-inline: clamp(u.rem(32), 1.74rem + 1.08vw, u.rem(40));
+    padding-block-end: clamp(u.rem(30), 1.36rem + 2.17vw, u.rem(46));
+
+    &__title {
+        color: u.$color-dark-gray-blue;
+        padding-block-end: clamp(24px, 1.37rem + 0.54vw, 28px);
+    }
+
+    &__topics {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    &__topic {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        block-size: 56px;
+        padding-inline: 16px;
+        border-radius: 12px;
+    }
+
+    &__topic-name {
+        display: flex;
+        gap: 12px;
+    }
+
+    &__topic-score {
+        color: u.$color-dark-gray-blue;
+    }
+
+    &__topic--reaction {
+        background-color: u.$color-red-transparent;
+        color: u.$color-red;
+    }
+
+    &__topic--memory {
+        background-color: u.$color-yellow-transparent;
+        color: u.$color-yellow;
+    }
+
+    &__topic--verbal {
+        background-color: u.$color-green-transparent;
+        color: u.$color-green;
+    }
+
+    &__topic--visual {
+        background-color: u.$color-blue-transparent;
+        color: u.$color-blue;
+    }
+}

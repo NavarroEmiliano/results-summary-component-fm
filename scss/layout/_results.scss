@@ -11,7 +11,7 @@
     background-image: linear-gradient(u.$color-light-slate-blue, u.$color-light-royal-blue);
     border-end-start-radius: u.rem(32);
     border-end-end-radius: u.rem(32);
-    padding-inline: 58px;
+    padding-inline: u.rem(58);
 
     &__title {
         color: u.$color-light-lavender;
@@ -22,7 +22,7 @@
         flex-direction: column;
         inline-size: clamp(8.75rem, 6.836734693877551rem + 8.16326530612245vw, 12.5rem);
         block-size: clamp(8.75rem, 6.836734693877551rem + 8.16326530612245vw, 12.5rem);
-        background-image: linear-gradient(u.$color-light-royal-blue, transparent);
+        background-image: linear-gradient(u.$color-violet-blue, u.$color-persian-blue);
         border-radius: 50%;
         text-align: center;
         padding-block-start: clamp(1.5625rem, 0.6058673469387756rem + 4.081632653061225vw, 3.4375rem);
@@ -40,5 +40,12 @@
 
     &__message {
         text-align: center;
+    }
+
+    &__message-title {
+        color: u.$color-white;
+    }
+    &__message-text {
+        color: u.$color-light-lavender;
     }
 }
