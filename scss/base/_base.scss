@@ -2,7 +2,8 @@
 body {
     min-block-size: 100vh;
     inline-size: 100%;
-/*     display: grid;
-    place-content: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: u.$color-pale-blue;
 }
