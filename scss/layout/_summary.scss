@@ -35,7 +35,11 @@
     }
 
     &__topic-score {
-        color: u.$color-dark-gray-blue;
+        color: u.$color-dark-gray-blue-transparent;
+
+        strong {
+            color: u.$color-dark-gray-blue;
+        }
     }
 
     &__topic--reaction {
