@@ -1,9 +1,12 @@
 @use '../utils/' as u;
 
 .summary {
+    display: flex;
+    flex-direction: column;
     padding-block-start: clamp(u.rem(24), 1.05rem + 1.90vw, u.rem(38));
     padding-inline: clamp(u.rem(32), 1.74rem + 1.08vw, u.rem(40));
     padding-block-end: clamp(u.rem(30), 1.36rem + 2.17vw, u.rem(46));
+    inline-size: 100%;
 
     &__title {
         color: u.$color-dark-gray-blue;

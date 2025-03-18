@@ -1,7 +1,12 @@
 @use '../utils/' as u;
 
 .results-component {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     background-color: u.$color-white;
+    box-shadow: u.$shadow-soft;
+    @include u.breakpoint(medium) {
+        grid-template-columns: auto 1fr;
+        inline-size: 736px;
+        border-radius: 32px;
+    }
 }

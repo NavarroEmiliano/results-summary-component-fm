@@ -13,6 +13,11 @@
     border-end-end-radius: u.rem(32);
     padding-inline: u.rem(58);
 
+    @include u.breakpoint(medium) {
+        max-inline-size: 368px;
+        border-radius: 32px;
+    }
+
     &__title {
         color: u.$color-light-lavender;
     }
