@@ -1,0 +1,28 @@
+@use '../utils/' as u;
+
+.summary__button {
+    position: relative;
+    inline-size: 100%;
+    block-size: 56px;
+    border-radius: 128px;
+    background-color: u.$color-dark-gray-blue;
+
+    span {
+        position: relative;
+        color: white;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        border-radius: inherit;
+        inset: 0;
+        background-image: linear-gradient(u.$color-light-slate-blue, u.$color-light-royal-blue);
+        opacity: 0;
+        transition: all 120ms ease;
+    } 
+
+    &:hover::before {
+        opacity: 1;
+    }
+}

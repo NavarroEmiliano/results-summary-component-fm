@@ -17,7 +17,8 @@ span {
     font-weight: 500;
 }
 
-button {
+button
+,button > * {
     font-size: u.rem(18);
     font-weight: 700;
 }
