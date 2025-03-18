@@ -53,7 +53,9 @@
 
     &__message-title {
         color: u.$color-white;
+        padding-block-end: 14px;
     }
+
     &__message-text {
         color: u.$color-light-lavender;
     }
