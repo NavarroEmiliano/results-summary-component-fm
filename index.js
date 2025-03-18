@@ -2,7 +2,7 @@
   try {
     const response = await fetch("./data.json");
 
-    if (!response.ok) throw new Error("Error al cargar los datos");
+    if (!response.ok) throw new Error("Error loading data");
 
     const data = await response.json();
 
