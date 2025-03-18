@@ -14,6 +14,7 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
+        padding-block-end: clamp(u.rem(24), 0.95rem + 2.31vw, u.rem(41));
     }
 
     &__topic {
