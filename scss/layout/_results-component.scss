@@ -3,10 +3,12 @@
 .results-component {
     display: grid;
     background-color: u.$color-white;
-    box-shadow: u.$shadow-soft;
+
     @include u.breakpoint(medium) {
         grid-template-columns: auto 1fr;
         inline-size: 736px;
         border-radius: 32px;
+        box-shadow: u.$shadow-soft;
+
     }
 }
