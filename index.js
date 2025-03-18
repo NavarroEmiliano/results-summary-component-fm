@@ -20,7 +20,7 @@
                     <img class="summary_topic-icon" src="${item.icon}" alt="${item.category}">
                     <span class="summary__topic-title">${item.category}</span>
                 </div>
-                <span class="summary__topic-score"><strong>${item.score}</strong> / 100</span>
+                <span class="summary__topic-score"><strong>${item.score}</strong>&nbsp;&nbsp;/ 100</span>
             `;
 
       fragment.appendChild(topicDiv);
